@@ -1,10 +1,10 @@
-#ifndef LRU_HPP
-#define LRU_HPP
+#ifndef OPT_HPP
+#define OPT_HPP
 
 #include <vector>
 #include <cstddef>
 
-class LRU {
+class OPT {
 private:
     size_t num_frames;
     
@@ -17,7 +17,7 @@ private:
     // if frames[i][j] = -1, then the j-th page in the i-th frame is empty
     std::vector<std::vector<int>> frames;
 public:
-    LRU(size_t num_frames, const std::vector<int> &pages);
+    OPT(size_t num_frames, const std::vector<int> &pages);
 
     void simulate();
     void print_frames() const;
@@ -25,4 +25,4 @@ public:
     size_t get_faults() const { return page_faults; }
 };
 
-#endif
+#endif // OPT_HPP

@@ -4,6 +4,7 @@
 #include <cstddef>
 #include "FIFO.hpp"
 #include "LRU.hpp"
+#include "OPT.hpp"
 
 using namespace std;
 
@@ -36,6 +37,9 @@ int main(int argc, char* argv[]) {
 
     FIFO fifo(num_frames, pages);
     cout << "FIFO " << fifo.get_faults() << endl;
+
+    OPT opt(num_frames, pages);
+    cout << "OTM " << opt.get_faults() << endl;
 
     LRU lru(num_frames, pages);
     cout << "LRU " << lru.get_faults() << endl;

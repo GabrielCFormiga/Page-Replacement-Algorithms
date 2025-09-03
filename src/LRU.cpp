@@ -1,4 +1,6 @@
 #include "LRU.hpp"
+#include <iomanip>
+#include <iostream>
 
 LRU::LRU(size_t num_frames, const std::vector<int> &pages) : num_frames(num_frames), pages(pages), page_faults(0) {
     frames.resize(pages.size() + 1, std::vector<int>(num_frames));

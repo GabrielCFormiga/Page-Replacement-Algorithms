@@ -1,6 +1,6 @@
 ### C++ Implementation of Page Replacement Algorithms
 
-In this repository, I implemented three page replacement algorithms in C++: First-in, First-out (FIFO) and Least Recently Used (LRU)
+In this repository, I implemented three page replacement algorithms in C++: First-in, First-out (FIFO), Least Recently Used (LRU) and Optimal (OPT).
 
 ### How to Run
 
