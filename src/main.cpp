@@ -37,12 +37,15 @@ int main(int argc, char* argv[]) {
 
     FIFO fifo(num_frames, pages);
     cout << "FIFO " << fifo.get_faults() << endl;
+    // fifo.print_frames();
 
     OPT opt(num_frames, pages);
     cout << "OTM " << opt.get_faults() << endl;
+    // opt.print_frames();
 
     LRU lru(num_frames, pages);
     cout << "LRU " << lru.get_faults() << endl;
+    // lru.print_frames();
 
     return 0;
 }
